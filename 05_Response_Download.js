@@ -2,9 +2,8 @@ var express = require('express')
 
 app = express()
 
-app.get('/', function(req, res){
-    
-    res.json(carsJsonArray)
+app.get('/file', function(req, res){
+    res.download("./uploads/1075-536x354.jpg")
 })
 
 app.listen(8000, function(){
